@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Form JS</title>
+</head>
+
+<script>
+function disp()
+{
+var kk1=document.getElementById('t1').value;
+		document.getElementById('t1submit').innerHTML=kk1;
+var kk3=document.getElementById('t2').value;
+		document.getElementById('t2submit').innerHTML=kk3;
+}
+</script>
+<body>
+<h1> Student Registration Form</h1>
+<form name='student registration form'>
+
+<label>Name:</label></br>
+<input type="text" name="Name" size="50" id="t1"  /></br>
+<p><span id="t1submit"></span></p>
+
+<label>Class:</label></br>
+<select name="Class">
+<option selected="" value="Default">(--Select--)</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select></br>
+<p><span id=s1submit"></span></p>
+
+<lable>Phone:</lable></br>
+<input type="text" name="Number" size="50" id="t2"/></br>
+<p><span id="t2submit"></span></p>
+
+<label >Address:</label></br>
+<input type::"text" id::"t3" name::"address" size::"50" /></br>
+<p><span id="t3submit"></span></p>
+
+<label>Email:</label></br>
+<input type::"text" id::"t4" name::"email" size::"50" /></br>
+<p><span id="t4submit" ></span></p>
+
+<label>Sex:</label></br>
+<input type="radio" name="msex" value="Male" /><span>Male</span></br>
+<input type="radio" name="fsex" value="Female" /><span>Female</span></br>
+<label>Language:</label></br>
+<input type="checkbox" name="en" value="en" checked /><span>English</span></br>
+<input type="checkbox" name="nonen" value="noen" /><span>Non English</span></br>
+
+<input type="submit" value="submit" onclick::"disp()" />
+</form>
+
+</body>
+</html>

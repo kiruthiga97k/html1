@@ -1,0 +1,50 @@
+<!-- IE in quirks mode --> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"> 
+<title>Fixed header and footer</title> 
+<style type="text/css"> 
+body{ 
+margin:0; 
+padding:header-<length> 0 footer-<length> 0; 
+} 
+div#header{ 
+position:absolute; 
+top:0; 
+left:0; 
+width:100%; 
+height:header-<length>; 
+} 
+div#footer{ 
+position:absolute; 
+bottom:0; 
+left:0; 
+width:100%; 
+height:footer-<length>; 
+} 
+@media screen{ 
+body>div#header{ 
+position:fixed; 
+} 
+body>div#footer{ 
+position:fixed; 
+} 
+} 
+* html body{ 
+overflow:hidden; 
+} 
+* html div#content{ 
+height:100%; 
+overflow:auto; 
+} 
+</style> 
+<div id="header" align="center"><h1> PARADISE BOOK STORE</h1> </div>
+<p style="text-align:center;">
+<img src="C:\Users\Kiruthiga\Downloads\reading.jpg" style="margin-top:50px;"> 
+</center>
+</p>
+<div id="footer" align="center"><h3> READING MINDS</h3> </div> 
+<body bgcolor="#CCFF00">
+<h3>
+<align="center">
+think learn and achieve something high</h3>
+
+
